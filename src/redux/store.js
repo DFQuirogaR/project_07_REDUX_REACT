@@ -1,12 +1,11 @@
 import  { configureStore } from '@reduxjs/toolkit';
-import  { counterReducer, userReducer } from './slice';
-import { useReducer } from 'react';
+import { counterReducer, userReducer } from './slice'
 
 // Crear el store
 const store = configureStore({
     reducer: {
         counter: counterReducer,
-        user: useReducer
+        user: userReducer
     }
 });
 
